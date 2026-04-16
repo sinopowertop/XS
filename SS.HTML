@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Shipping Schedule</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+        body {
+            padding: 20px;
+            background-color: #f5f7fa;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        /* Route Section */
+        .route-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        .route-title {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .freight-info {
+            background-color: #f8f9fa;
+            padding: 8px 15px;
+            color: #e74c3c;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+        }
+        /* Table Style */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .schedule-table th {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .schedule-table tr:nth-child(even) {
+            background-color: #fafbfc;
+        }
+        .schedule-table tr:hover {
+            background-color: #f1f5f9;
+        }
+        .blank-sailing {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .schedule-table th, .schedule-table td {
+                padding: 6px 4px;
+                font-size: 12px;
+            }
+            .route-title {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>International Shipping Schedule</h1>
+
+        <!-- AE3 Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (AE3)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Shanghai ETD</th>
+                        <th>Ningbo ETD</th>
+                        <th>London Gateway ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MOSCOW MAERSK 619W</td>
+                        <td>4-May</td>
+                        <td>8-May</td>
+                        <td>15-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>MARIE MAERSK 620W</td>
+                        <td>11-May</td>
+                        <td>15-May</td>
+                        <td>22-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>MONACO MAERSK621W</td>
+                        <td>18-May</td>
+                        <td>22-May</td>
+                        <td>29-Jun</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Griffin/FP2 Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (Griffin/FP2)</div>
+            <div class="freight-info">Freight (USD): USD1050/1800</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Shanghai ETD</th>
+                        <th>Ningbo ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Southampton ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ONE FORWARD 008W</td>
+                        <td>/</td>
+                        <td>1-May</td>
+                        <td>4-May</td>
+                        <td>7-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>ONE STRENGTH 001W</td>
+                        <td>4-May</td>
+                        <td>7-May</td>
+                        <td>10-May</td>
+                        <td>13-Jun</td>
+                    </tr>
+                    <tr>
+                        <td class="blank-sailing">BLANK SAILING</td>
+                        <td>11-May</td>
+                        <td>14-May</td>
+                        <td>17-May</td>
+                        <td>20-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>ONE APUS 022W</td>
+                        <td>18-May</td>
+                        <td>20-May</td>
+                        <td>23-May</td>
+                        <td>27-Jun</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Condor/FE3 Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (Condor/FE3)</div>
+            <div class="freight-info">Freight (USD): USD1200/1800</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Qingdao ETD</th>
+                        <th>Ningbo ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                        <th>Antwerp ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HMM DREAM 061W</td>
+                        <td>1-May</td>
+                        <td>6-May</td>
+                        <td>10-May</td>
+                        <td>23-Jun</td>
+                        <td>7-Jul</td>
+                    </tr>
+                    <tr>
+                        <td class="blank-sailing">BLANK SAILING</td>
+                        <td>8-May</td>
+                        <td>13-May</td>
+                        <td>17-May</td>
+                        <td>30-May</td>
+                        <td>14-Jul</td>
+                    </tr>
+                    <tr>
+                        <td>HMM COPENHAGEN 019W</td>
+                        <td>15-May</td>
+                        <td>19-May</td>
+                        <td>24-May</td>
+                        <td>1-Jul</td>
+                        <td>14-Jul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Britannia Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (Britannia)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Shanghai ETD</th>
+                        <th>Nansha ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                        <th>London Gateway ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MSC ANNABELLA / QB617B</td>
+                        <td>/</td>
+                        <td>3-May</td>
+                        <td>5-May</td>
+                        <td>13-Jun</td>
+                        <td>4-Jul</td>
+                    </tr>
+                    <tr>
+                        <td>MSC CATANIA / QB618B</td>
+                        <td>6-May</td>
+                        <td>10-May</td>
+                        <td>11-May</td>
+                        <td>19-Jun</td>
+                        <td>11-Jul</td>
+                    </tr>
+                    <tr>
+                        <td>MSC RENEE XIII / QB619B</td>
+                        <td>14-May</td>
+                        <td>17-May</td>
+                        <td>18-May</td>
+                        <td>27-Jun</td>
+                        <td>18-Jul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Albatros Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (Albatros)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Xingang ETD</th>
+                        <th>Dalian ETD</th>
+                        <th>Ningbo ETD</th>
+                        <th>Xiamen ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MSC PERLE / GA616W</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>1-May</td>
+                        <td>2-May</td>
+                        <td>7-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>MSC LIVORNO / GA617W</td>
+                        <td>25-Apr</td>
+                        <td>27-Apr</td>
+                        <td>5-May</td>
+                        <td>8-May</td>
+                        <td>9-May</td>
+                        <td>14-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>MSC PALOMA / GA618W</td>
+                        <td>5-May</td>
+                        <td>7-May</td>
+                        <td>14-May</td>
+                        <td>16-May</td>
+                        <td>18-May</td>
+                        <td>21-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>MSC GIUSY / GA619W</td>
+                        <td>9-May</td>
+                        <td>11-May</td>
+                        <td>19-May</td>
+                        <td>22-May</td>
+                        <td>23-May</td>
+                        <td>28-Jun</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Swan/FE6 Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (Swan/FE6)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Ningbo ETD</th>
+                        <th>Shanghai ETD</th>
+                        <th>Xiamen ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                        <th>Antwerp ETA</th>
+                        <th>Gothenburg ETA</th>
+                        <th>Aarhus ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MSC ANGOLA / FW616W</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>2-May</td>
+                        <td>6-Jun</td>
+                        <td>9-Jun</td>
+                        <td>14-Jun</td>
+                        <td>17-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>MSC KANOKO / FW617W</td>
+                        <td>30-Apr</td>
+                        <td>3-May</td>
+                        <td>6-May</td>
+                        <td>9-May</td>
+                        <td>13-Jun</td>
+                        <td>16-Jun</td>
+                        <td>21-Jun</td>
+                        <td>24-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>MSC NERANO / FW618W</td>
+                        <td>7-May</td>
+                        <td>10-May</td>
+                        <td>13-May</td>
+                        <td>16-May</td>
+                        <td>20-Jun</td>
+                        <td>23-Jun</td>
+                        <td>28-Jun</td>
+                        <td>1-Jul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- OCEAN Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (OCEAN)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Xiamen ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Southampton ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CMA CGM TANYA</td>
+                        <td>/</td>
+                        <td>27-Apr</td>
+                        <td>4-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>CMA CGM MEKONG</td>
+                        <td>1-May</td>
+                        <td>3-May</td>
+                        <td>11-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>CMA CGM YUKON</td>
+                        <td>8-May</td>
+                        <td>10-May</td>
+                        <td>17-Jun</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NE7 Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (NE7)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Shanghai ETD</th>
+                        <th>Xiamen ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>COSCO SHIPPING HIMALAYAS 047WV</td>
+                        <td>3-May</td>
+                        <td>6-May</td>
+                        <td>9-May</td>
+                        <td>22-Jun</td>
+                    </tr>
+                    <tr>
+                        <td class="blank-sailing">BLANK SAILING</td>
+                        <td>10-May</td>
+                        <td>13-May</td>
+                        <td>16-May</td>
+                        <td>29-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>COSCO SHIPPING ALPS 048W</td>
+                        <td>15-May</td>
+                        <td>18-May</td>
+                        <td>21-May</td>
+                        <td>6-Jul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CEM Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (CEM)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Qingdao ETD</th>
+                        <th>Shanghai ETD</th>
+                        <th>Ningbo ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EVER ATOP 1398-013W</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>3-May</td>
+                        <td>7-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>EVER ACT 1399-017W</td>
+                        <td>1-May</td>
+                        <td>4-May</td>
+                        <td>6-May</td>
+                        <td>10-May</td>
+                        <td>14-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>EVER APEX 1400-014W</td>
+                        <td>8-May</td>
+                        <td>11-May</td>
+                        <td>13-May</td>
+                        <td>17-May</td>
+                        <td>21-Jun</td>
+                    </tr>
+                    <tr>
+                        <td class="blank-sailing">BLANK SAILING</td>
+                        <td>15-May</td>
+                        <td>18-May</td>
+                        <td>20-May</td>
+                        <td>24-May</td>
+                        <td>28-Jun</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CES Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (CES)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Xingang ETD</th>
+                        <th>Ningbo ETD</th>
+                        <th>Shanghai ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                        <th>Antwerp ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EVER EON 0810-002W</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>1-May</td>
+                        <td>5-May</td>
+                        <td>9-Jun</td>
+                        <td>11-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>EVER GREET 0811-026W</td>
+                        <td>30-Apr</td>
+                        <td>4-May</td>
+                        <td>6-May</td>
+                        <td>12-May</td>
+                        <td>16-Jun</td>
+                        <td>18-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>EVER EDIT 0812-001W</td>
+                        <td>7-May</td>
+                        <td>11-May</td>
+                        <td>13-May</td>
+                        <td>18-May</td>
+                        <td>23-Jun</td>
+                        <td>25-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>EVER GENTLE 0813-028W</td>
+                        <td>14-May</td>
+                        <td>18-May</td>
+                        <td>20-May</td>
+                        <td>26-May</td>
+                        <td>30-Jun</td>
+                        <td>2-Jul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NE1 Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (NE1)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Qingdao ETD</th>
+                        <th>Shanghai ETD</th>
+                        <th>Ningbo ETD</th>
+                        <th>Xiamen ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Felixstowe ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>OOCL GERMANY 038W</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>2-May</td>
+                        <td>2-May</td>
+                        <td>6-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>COSCO SHIPPING AQUARIUS 049W</td>
+                        <td>1-May</td>
+                        <td>4-May</td>
+                        <td>6-May</td>
+                        <td>9-May</td>
+                        <td>10-May</td>
+                        <td>13-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>OOCL ABU DHABI 008W</td>
+                        <td>7-May</td>
+                        <td>11-May</td>
+                        <td>13-May</td>
+                        <td>15-May</td>
+                        <td>17-May</td>
+                        <td>20-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>OOCL SPAIN 012W</td>
+                        <td>15-May</td>
+                        <td>18-May</td>
+                        <td>20-May</td>
+                        <td>23-May</td>
+                        <td>25-May</td>
+                        <td>27-Jun</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- FAL1 Route -->
+        <div class="route-section">
+            <div class="route-title">V/V (FAL1)</div>
+            <div class="freight-info">Freight (USD): USD1300/2100</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Vessel / Voyage</th>
+                        <th>Ningbo ETD</th>
+                        <th>Shanghai ETD</th>
+                        <th>Yantian ETD</th>
+                        <th>Southampton ETA</th>
+                        <th>Dunkerque ETA</th>
+                        <th>Le Havre ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CMA CGM GEORG FORSTER</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>3-May</td>
+                        <td>8-Jun</td>
+                        <td>10-Jun</td>
+                        <td>22-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>CMA CGM JACQUES SAAD</td>
+                        <td>4-May</td>
+                        <td>7-May</td>
+                        <td>10-May</td>
+                        <td>15-Jun</td>
+                        <td>17-Jun</td>
+                        <td>29-Jun</td>
+                    </tr>
+                    <tr>
+                        <td>APL CHANGI</td>
+                        <td>11-May</td>
+                        <td>14-May</td>
+                        <td>17-May</td>
+                        <td>22-Jun</td>
+                        <td>24-Jun</td>
+                        <td>6-Jul</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
