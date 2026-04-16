@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>忠县三汇谢氏智华堂棉花坝私塾塾师与课本简表</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        h2 {
+            font-size: 19px;
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .book-part {
+            margin-bottom: 15px;
+        }
+        .book-part h3 {
+            font-size: 16px;
+            color: #34495e;
+            margin-bottom: 6px;
+        }
+        .book-text {
+            padding-left: 15px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>忠县三汇谢氏智华堂棉花坝私塾塾师与课本简表</h1>
+
+        <h2>一、私塾塾师及简介</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>身份</th>
+                    <th>执教年代</th>
+                    <th>主要教学内容</th>
+                    <th>个人简介</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>谢懋堂（谢茂堂）</td>
+                    <td>清末廪生、智华堂族长</td>
+                    <td>清末光绪—宣统年间</td>
+                    <td>四书五经、经史、书法</td>
+                    <td>忠州后乡名士，棉花坝祠堂首任塾师，治学严谨，以忠孝传家，族中子弟多从其受教</td>
+                </tr>
+                <tr>
+                    <td>谢文轩</td>
+                    <td>清末秀才</td>
+                    <td>清末民初（约1900—1920年）</td>
+                    <td>传统经史、地理、算术、时事</td>
+                    <td>谢懋堂亲属，思想开明，受新政影响，兼授新式常识</td>
+                </tr>
+                <tr>
+                    <td>谢炳奎</td>
+                    <td>民间塾师</td>
+                    <td>民国初年（1915—1930年）</td>
+                    <td>识字、珠算、书信、启蒙教育</td>
+                    <td>自学成才，侧重实用教学，适配农家子弟求学需求</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>二、私塾使用课本</h2>
+
+        <div class="book-part">
+            <h3>（一）启蒙蒙馆教材</h3>
+            <div class="book-text">
+                识字类：《三字经》《百家姓》《千字文》《四字经》<br>
+                常识类：《幼学琼林》《增广贤文》《千家诗》<br>
+                乡土实用类：《大全杂字》<br>
+                女学类：《女儿经》《女孝经》
+            </div>
+        </div>
+
+        <div class="book-part">
+            <h3>（二）经学经馆教材</h3>
+            <div class="book-text">
+                四书：《大学》《中庸》《论语》《孟子》<br>
+                五经：《诗经》《书经》《易经》《礼记》《春秋左传》<br>
+                诗文声律类：《声律启蒙》《唐诗三百首》《古文观止》
+            </div>
+        </div>
+
+        <div class="book-part">
+            <h3>（三）民初新增教材</h3>
+            <div class="book-text">
+                《简易识字课本》《四川乡土志》《国民必读》
+            </div>
+        </div>
+    </div>
+</body>
+</html>
