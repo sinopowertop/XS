@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千年望族 · 私塾传家文化网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "SimSun", serif;
+        }
+
+        body {
+            background: #f8f5f0;
+            color: #3a3a38;
+            line-height: 1.8;
+        }
+
+        /* 导航 */
+        .navbar {
+            background: #5d3f36;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nav-item {
+            color: white;
+            padding: 0.8rem 1.2rem;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .nav-item:hover {
+            background: #8c6d4f;
+        }
+
+        header {
+            background: #6d4c41;
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            scroll-margin-top: 70px;
+        }
+
+        .section h2 {
+            color: #6d4c41;
+            border-left: 6px solid #b89f76;
+            padding-left: 14px;
+            margin-bottom: 1.2rem;
+            font-size: 1.5rem;
+        }
+
+        .section h3 {
+            color: #8c6d4f;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+        .family-card {
+            background: #fdfbf7;
+            border: 1px solid #e6dccc;
+            border-radius: 8px;
+            padding: 1.2rem;
+            text-align: center;
+        }
+        .family-card h3 {
+            color: #8c6d4f;
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table th, table td {
+            border: 1px solid #e0d5c7;
+            padding: 0.9rem;
+            text-align: left;
+        }
+        table th {
+            background: #f0e9df;
+            color: #6d4c41;
+        }
+
+        .timeline {
+            border-left: 3px solid #b89f76;
+            padding-left: 1.2rem;
+            margin-left: 0.5rem;
+        }
+        .timeline-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .scene-box {
+            background: #f9f6f1;
+            border-left: 4px solid #8c6d4f;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .card {
+            border-left: 4px solid #6d4c41;
+            background: #fffaf5;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            background: #6d4c41;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width:768px) {
+            .family-grid { grid-template-columns: 1fr 1fr; }
+            .nav-item { padding: 0.6rem 0.8rem; font-size: 0.9rem; }
+        }
+        @media (max-width:480px) {
+            .family-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 导航菜单 -->
+<div class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-item">首页</a>
+        <a href="#family" class="nav-item">五大望族</a>
+        <a href="#teacher" class="nav-item">私塾名师</a>
+        <a href="#book" class="nav-item">必读课本</a>
+        <a href="#time" class="nav-item">每日作息</a>
+        <a href="#scene" class="nav-item">私塾场景</a>
+        <a href="#xieshi" class="nav-item">忠县谢氏</a>
+        <a href="#rules" class="nav-item">家规家训</a>
+    </div>
+</div>
+
+<header id="home">
+    <h1>千年望族 · 私塾传家文化网</h1>
+    <p>孔 | 钱 | 裴 | 姬 | 忠县谢氏 · 传家课本、名师、作息、家训全纪录</p>
+</header>
+
+<div class="container">
+
+    <!-- 五大望族 -->
+    <div class="section" id="family">
+        <h2>🏛️ 五大传世家族</h2>
+        <div class="family-grid">
+            <div class="family-card">
+                <h3>孔氏</h3>
+                <p>诗礼传家 · 天下第一族</p>
+            </div>
+            <div class="family-card">
+                <h3>钱氏</h3>
+                <p>诗书报国 · 人才辈出</p>
+            </div>
+            <div class="family-card">
+                <h3>裴氏</h3>
+                <p>经世致用 · 宰相世家</p>
+            </div>
+            <div class="family-card">
+                <h3>姬姓</h3>
+                <p>礼乐正宗 · 万姓之祖</p>
+            </div>
+            <div class="family-card">
+                <h3>忠县谢氏</h3>
+                <p>耕读为本 · 忠孝传家</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 私塾名师 -->
+    <div class="section" id="teacher">
+        <h2>👨‍🏫 明清民国私塾名师</h2>
+        <table>
+            <tr><th>家族</th><th>代表塾师</th><th>主讲内容</th></tr>
+            <tr><td>孔氏</td><td>王毓华、吴伯霄、孔传铎</td><td>四书五经、礼仪、书法</td></tr>
+            <tr><td>钱氏</td><td>钱基博、钱穆、孙诒让</td><td>经史、古文、国学</td></tr>
+            <tr><td>裴氏</td><td>裴宗锡、裴维侒</td><td>吏治、兵学、律令</td></tr>
+            <tr><td>姬姓</td><td>姬际可、朱彝尊</td><td>礼乐、经学、宗法</td></tr>
+            <tr><td>谢氏</td><td>族内名儒、谢效池（孝池）</td><td>蒙学、家训、耕读、算盘</td></tr>
+        </table>
+    </div>
+
+    <!-- 按年龄读书 -->
+    <div class="section" id="book">
+        <h2>📚 按年龄必读课本</h2>
+        <div class="timeline">
+            <div class="timeline-item"><strong>6岁 · 启蒙</strong><br>《三字经》《百家姓》《千字文》《弟子规》</div>
+            <div class="timeline-item"><strong>10岁 · 进阶</strong><br>《大学》《中庸》《论语》《孟子》《孝经》</div>
+            <div class="timeline-item"><strong>15岁 · 专修</strong><br>五经、史记、汉书、资治通鉴、策论、家学</div>
+        </div>
+    </div>
+
+    <!-- 私塾作息 -->
+    <div class="section" id="time">
+        <h2>⏰ 私塾一日作息</h2>
+        <table>
+            <tr><th>时间</th><th>内容</th></tr>
+            <tr><td>05:30-06:00</td><td>起床、请安</td></tr>
+            <tr><td>06:00-07:30</td><td>早读</td></tr>
+            <tr><td>08:30-11:30</td><td>正课、讲书、写字</td></tr>
+            <tr><td>14:00-17:00</td><td>习字、对对子、温书</td></tr>
+            <tr><td>19:00-20:30</td><td>夜读、背书</td></tr>
+            <tr><td>21:00</td><td>就寝</td></tr>
+        </table>
+    </div>
+
+    <!-- 私塾真实场景 -->
+    <div class="section" id="scene">
+        <h2>🏮 私塾真实场景</h2>
+        <div class="scene-box"><strong>先生训斥学生</strong><br>“读了三日尚且支支吾吾！圣贤书岂能当耳边风？背不熟不许晚饭！”</div>
+        <div class="scene-box"><strong>族长视察家塾</strong><br>“我族诗礼传家，数百年基业，全在读书明理。怠惰之人，何以承先启后！”</div>
+        <div class="scene-box"><strong>年节读书规矩</strong><br>除夕初一放假，初二即温书；拜年必考背书；祭祖必带书本。</div>
+    </div>
+
+    <!-- 忠县谢氏 · 完整版 -->
+    <div class="section" id="xieshi">
+        <h2>🌾 忠县谢氏 · 耕读传家</h2>
+
+        <div class="card">
+            <h3>先祖 · 谢效池（谢孝池）</h3>
+            <p>忠县谢氏世代儒师，耕读并重，执教族塾多年，以勤俭、忠孝、严教闻名乡里。</p>
+            <p>一生主讲：蒙学、四书、家训、算盘、田契书信、乡规民约，为谢氏文脉传承立下根基。</p>
+        </div>
+
+        <p><strong>核心家训：</strong>耕读为本，忠孝传家；勤俭持家，不奢不惰。</p>
+        <p><strong>私塾课本：</strong>蒙学 + 四书 + 孝经 + 算盘 + 契约书信 + 乡规族约。</p>
+        <p><strong>家风：</strong>睦宗族、和乡邻、不欺贫、不凌弱、守本分。</p>
+
+        <h3>谢氏私塾三不教</h3>
+        <ul style="padding-left:1.5rem; margin-top:0.5rem">
+            <li>不孝不悌者不教</li>
+            <li>骄横欺人者不教</li>
+            <li>怠惰弃学者不教</li>
+        </ul>
+    </div>
+
+    <!-- 家规铁律 -->
+    <div class="section" id="rules">
+        <h2>🧾 大家族共同家教铁律</h2>
+        <ul style="padding-left:1.5rem">
+            <li>不敬父母师长 —— 重罚</li>
+            <li>说谎偷窃 —— 严惩</li>
+            <li>赌博酗酒纨绔 —— 逐出私塾</li>
+            <li>读书怠惰 —— 罚站、罚抄、罚跪</li>
+            <li>举止失仪、仗势欺人 —— 家法处置</li>
+        </ul>
+
+        <h3>📜 谢氏传世家训（可刻族谱）</h3>
+        <div class="card">
+            耕读为本，忠孝传家<br>
+            勤俭持家，不奢不惰<br>
+            敬祖宗，睦宗族，和乡邻<br>
+            不欺贫，不凌弱，不仗势<br>
+            言必信，行必正，心必诚
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>千年望族私塾传家文化网 · 忠县谢氏家族史专用</p>
+    <p>孔 钱 裴 姬 谢氏 · 耕读传家 万古流芳</p>
+</footer>
+
+</body>
+</html>
